@@ -1,5 +1,8 @@
 function addName() {
     let name = prompt("Lütfen İsminizi Giriniz");
+    if (name == null || name == "") {
+        alert("İsim Girmediniz.");
+    }
     document.getElementById('myName').innerHTML = name;
 
 }
